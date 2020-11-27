@@ -32,6 +32,5 @@ app.use ("/items" ,function(req, res) {
 
 app.get( "/items/:id",function(request, response) {
     const pokemons = pokedex.find(val =>val.id == parseInt(req.params.id))
-    pokemons.delete
-        res.send("delete")
+
 });
